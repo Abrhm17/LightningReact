@@ -278,7 +278,7 @@ svg {
     }
 
 .w-layout-blockcontainer {
-  max-width: 940px;
+  /* max-width: 940px; */
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -518,10 +518,10 @@ svg {
   display: flex;
 }
 
-.w-commerce-commercecartitemimage {
+/* .w-commerce-commercecartitemimage {
   width: 60px;
   height: 0%;
-}
+} */
 
 .w-commerce-commercecheckoutorderitemdescriptionwrapper {
   flex-grow: 1;
@@ -1131,7 +1131,7 @@ svg {
 
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
-    max-width: 728px;
+    max-width: none;
   }
 }
 
@@ -1327,6 +1327,7 @@ figcaption {
   border-width: 0;
   margin-left: 0;
   margin-right: 0;
+  min-height: 200px;
 }
 
 .section.cc-product-detail {
@@ -1648,6 +1649,14 @@ figcaption {
   display: flex;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .navigation-items {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
 .cart {
   margin-left: 20px;
@@ -1790,8 +1799,36 @@ figcaption {
   display: flex;
   position: static;
   left: auto;
+  
 }
+@media screen and (max-width: 767px) {
+.navigation-wrap {
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  display: flex;
+  position: static;
+  left: auto;
+    flex-direction: column;
 
+}
+}
+@media screen and (max-width: 767px) {
+  .navigation-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navigation-wrap .button {
+    position: static;
+    display: inline-block;
+    margin: 0;
+    align-self: center;
+  }
+}
 .cart-container {
   min-width: 400px;
   box-shadow: 0 2px 10px #00000014;
@@ -2491,10 +2528,8 @@ figcaption {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: #000;
-  min-height: 500px;
   margin-top: auto;
-  padding: 0;
-  max-height: 700px;
+  padding: 0;  
 }
 
 .cell-3 {
@@ -2751,6 +2786,16 @@ figcaption {
   top: 20%;
 }
 
+/* .quick-stack-3 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 0 solid #00adef;
+  min-height: 500px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  max-height: 700px;
+} */
 .quick-stack-3 {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -2761,7 +2806,11 @@ figcaption {
   padding: 0;
   max-height: 700px;
 }
-
+@media screen and (max-width: 767px) {
+  .quick-stack-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
 .sidebar {
   flex-flow: column;
   display: flex;

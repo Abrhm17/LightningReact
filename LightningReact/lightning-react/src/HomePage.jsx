@@ -30,11 +30,12 @@ return (
                <Link to="/contact" className="navigation-item w-nav-link">
               Contact
             </Link>
+                  <a href="#" class="button w-button ">Get Started</a>
+
       </div>
-      <a href="#" class="button w-button">Get Started</a>
-      <div class="navigation-wrap">
+      {/* <div class="navigation-wrap">
         <div class="menu-button w-nav-button"><img src="images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon"/></div>
-      </div>
+      </div> */}
     </div>
   </div>
   <div class="section cc-store-home-wrap">
