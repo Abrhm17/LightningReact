@@ -9,28 +9,46 @@
     // ];
 
         const phrases = [
-      ['More secure code'],
+      ['More secure apps'],
       ['More robust code'],
+      ['Easier code reviews'],
       ['Faster turnaround time'],
+      ['Hit sprint goals more consistently'],
       ['Streamline your workflow'],
-      ['More readable code base'],
+      ['More intuitive code'],
+      ['Get the most from LLMs'],
+      ['Less copy-pasting'],
+      ['Use fewer tokens'],
+      ['Supercharge your creativity']
     ];
-        const placedRects = [];
+    let currentPhrases = [];
+    let placedRects = [];
     let burstTimer = null;
 
     
   export function startBurst() {
     console.log('START BURST');
     const stage = document.getElementById('stage');
-    let cardId = 1;
+    //let cardId = 1;
       if (burstTimer) return;
      // burstBtn.textContent = 'Stop burst';
       burstTimer = setInterval(() => {
-        const txt = phrases[Math.floor(Math.random() * phrases.length)];
-        const ok = addCard(txt);
+        if(currentPhrases.length < 9){
+              let txt = phrases[Math.floor(Math.random() * phrases.length)];
+
+          while(currentPhrases.includes(txt)){
+            txt = phrases[Math.floor(Math.random() * phrases.length)];
+          }
+  const ok = addCard(txt);
         if (!ok) {
           stopBurst();
         }
+
+    }
+        else {
+          clearAndResume();
+        }
+    
       }, 810);
     }
 
@@ -40,12 +58,23 @@
       burstTimer = null;
     //  burstBtn.textContent = 'Start burst';
     }
+        export function clearAndResume() {
+      //clearInterval(burstTimer);
+        clearInterval(burstTimer);
+         setTimeout (() => {
+          { 
+          clearCards();
+          startBurst()}}, 5000);
+        
+    }
 
     function clearCards() {
       stopBurst();
+      currentPhrases = [];
       stage.innerHTML = '';
-      placedRects.length = 0;
-      cardId = 1;
+      placedRects = [];
+
+      //cardId = 1;
      // updateStats();
     }
 
@@ -53,8 +82,6 @@
       console.log('ADD CARD');
       const size = measureCard(text);
       const pos = findFreePosition(size.width, size.height);
-      console.log('POS IS');
-      console.log(pos);
       if (!pos) return false;
 
       const card = document.createElement('div');
@@ -66,7 +93,7 @@
           const stage = document.getElementById('stage');
 
       stage.appendChild(card);
-
+      currentPhrases.push(text);
       placedRects.push(pos);
      // updateStats();
       return true;
