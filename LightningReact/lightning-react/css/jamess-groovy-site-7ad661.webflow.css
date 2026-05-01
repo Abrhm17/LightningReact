@@ -147,7 +147,7 @@ svg {
   .cell-bottom:hover .shape {
     transform: translateX(-80px) scale(9);
   }
- */
+ 
 
    .fancy-cell {
     position: relative;
