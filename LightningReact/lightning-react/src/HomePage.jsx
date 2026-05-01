@@ -59,7 +59,7 @@ return (
       </div>
     </div>
     <div class="w-layout-blockcontainer container-2 w-container">
-      <div class="text-block-4">Lightning Start allows you to leverage AI more effectively and create code with fewer commands than ever before. Leave to AI the tasks to which it is best suited. Lightning Start is a rich framework which allows this to happen.</div>
+      <div class="text-block-4">Lightning Start allows you to leverage AI more effectively and create code with fewer commands than ever before. Leave AI to the tasks to which it is best suited. Lightning Start is a rich framework which allows this to happen.</div>
     </div>
     <div id="w-node-_644e3780-15d4-01d0-e8fd-5cfac0e341ef-42e9d972" class="w-layout-layout quick-stack-3 wf-layout-layout">
       <div id="w-node-_76b46e81-837e-e5b8-a26d-207c10d2b7b9-42e9d972" class="w-layout-cell">
