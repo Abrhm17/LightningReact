@@ -33,7 +33,7 @@
       if (burstTimer) return;
      // burstBtn.textContent = 'Stop burst';
       burstTimer = setInterval(() => {
-        if(currentPhrases.length < 9){
+        if(currentPhrases.length < 11){
               let txt = phrases[Math.floor(Math.random() * phrases.length)];
 
           while(currentPhrases.includes(txt)){
@@ -82,7 +82,10 @@
       console.log('ADD CARD');
       const size = measureCard(text);
       const pos = findFreePosition(size.width, size.height);
-      if (!pos) return false;
+      if (!pos){
+        clearAndResume(); 
+        return false;
+      }
 
       const card = document.createElement('div');
       card.className = 'card';
