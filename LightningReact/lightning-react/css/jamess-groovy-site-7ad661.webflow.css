@@ -1365,7 +1365,7 @@ figcaption {
 .container.cc-subscription-form {
   text-align: center;
   background-color: #d3d3d3;
-  border-top-width: 2px;
+  border-top-width: 0px;
   border-top-color: #27aae1;
   flex-direction: column;
   justify-content: center;
@@ -1881,12 +1881,15 @@ figcaption {
 }
 
 .footer {
+  width: 100%;
+  justify-self: center;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template: ". . . . Area"
                  ". . . . ."
                  / 2fr 1fr 1fr 1.25fr;
   place-items: start;
+  padding-top: 10px;
 }
 
 .footer-link {
@@ -2827,7 +2830,7 @@ figcaption {
   }
 
   .navigation-items {
-    background-color: #fff;
+    background-color: black;
   }
 
   .cart {
@@ -2852,13 +2855,13 @@ figcaption {
     transition: background-color .4s, opacity .4s, color .4s;
   }
 
-  .navigation-item:hover {
+  /* .navigation-item:hover {
     background-color: #f7f8f9;
   }
 
   .navigation-item:active {
     background-color: #eef0f3;
-  }
+  } */
 
   .menu-button {
     padding: 0;

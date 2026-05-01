@@ -134,7 +134,7 @@ return (
       </div>
     </div>
   </div>
-  <div class="section footer">
+  <div class="section">
     <div class="container">
       <div class="w-layout-grid footer">
         <a href="index.html" id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971b-87e29718" aria-current="page" class="logo-link w-inline-block w--current"></a>
