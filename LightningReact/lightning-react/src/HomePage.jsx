@@ -30,7 +30,7 @@ return (
                <Link to="/contact" className="navigation-item w-nav-link">
               Contact
             </Link>
-                  <a href="#" class="button w-button ">Get Started</a>
+                  <a href="https://apps.microsoft.com/detail/9p9vwp5ght82?hl=en-GB&gl=GB" class="button w-button ">Get Started</a>
 
       </div>
       {/* <div class="navigation-wrap">
@@ -59,7 +59,7 @@ return (
       </div>
     </div>
     <div class="w-layout-blockcontainer container-2 w-container">
-      <div class="text-block-4">This is some text inside of a div block.</div>
+      <div class="text-block-4">Lightning Start allows you to leverage AI more effectively and create code with fewer commands than ever before. Supercharge your creativity, reduce tedious copy-pasting and quality-vetting, while remaining in the driving seat of a software project. Leave to AI the tasks to which it is best suited. Lightning Start is a rich framework which allows this to happen.</div>
     </div>
     <div id="w-node-_644e3780-15d4-01d0-e8fd-5cfac0e341ef-42e9d972" class="w-layout-layout quick-stack-3 wf-layout-layout">
       <div id="w-node-_76b46e81-837e-e5b8-a26d-207c10d2b7b9-42e9d972" class="w-layout-cell">
@@ -68,12 +68,10 @@ return (
       </div>
             <div class="fancy-cell cell-top w-layout-cell">
                     <div class="cell-text-overlay">
-            Bing pow poom
-
+            More reliable use of AI
             </div>
              <div class="fancy-cell-overlay">
-    <h2>Your title</h2>
-    <p>Your text goes here.</p>
+    <p>Lightning Start, used correctly, is guaranteed to generate good code with a higher probability than a bare, user-prompted LLM</p>
   </div>
     <svg viewBox="0 0 577 577" preserveAspectRatio="none">
       <rect class="base" width="577" height="577" />
@@ -94,12 +92,10 @@ return (
 </div>
            <div class="fancy-cell cell-top w-layout-cell">
             <div class="cell-text-overlay">
-            Bing pow poom
-
+            Reduce stress and tedium
             </div>
              <div class="fancy-cell-overlay">
-    <h2>Your title</h2>
-    <p>Your text goes here.</p>
+    <p>Lightning Start integrates AI in a much more symbiotic way than existing products. This can have incalculable benefits a dev team's morale.</p>
   </div>
     <svg viewBox="0 0 577 577" preserveAspectRatio="none">
       <rect class="base" width="577" height="577" />
