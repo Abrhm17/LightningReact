@@ -48,12 +48,13 @@ return (
         <div class="div-block-9">
           <div class="div-block-7"> Electrify your workflow </div>
           <div class="div-block-8"> With Lighting Start Desktop</div>
-        </div>
-        <div class="div-block-5">
+                <div class="div-block-5">
    
        <Link to="/documentation" className="button-2 w-button">Explore Features   </Link>
           <a href="#" class="button-3 w-button">What is Lightning Start?</a>
         </div>
+        </div>
+  
       </div>
     </div>
     <div class="w-layout-blockcontainer container-2 w-container">

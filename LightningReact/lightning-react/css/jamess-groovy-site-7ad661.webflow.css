@@ -2714,7 +2714,8 @@ figcaption {
 
 .div-block-5 {
   margin-top: auto;
-  position: absolute;
+  position: relative;
+  margin-left: auto%;
 }
 
 .text-block-7 {
