@@ -68,10 +68,10 @@ return (
       </div>
             <div class="fancy-cell cell-top w-layout-cell">
                     <div class="cell-text-overlay">
-            More reliable use of AI
+            Use fewer tokens
             </div>
              <div class="fancy-cell-overlay">
-    <p>Lightning Start, used correctly, will generate good code with a higher probability than a bare, user-prompted LLM</p>
+              <p>Lightning Start allows you to use LLM tokens more efficiently than before, improving results and saving money.</p>
   </div>
     <svg viewBox="0 0 577 577" preserveAspectRatio="none">
       <rect class="base" width="577" height="577" />
@@ -92,10 +92,10 @@ return (
 </div>
            <div class="fancy-cell cell-top w-layout-cell">
             <div class="cell-text-overlay">
-            Reduce stress and tedium
+            Improve productivity + morale
             </div>
              <div class="fancy-cell-overlay">
-    <p>Lightning Start integrates AI in a much more symbiotic way than existing products. This can have incalculable benefits to a dev team's morale.</p>
+    <p>Lightning Start integrates AI in a more symbiotic way than existing products, offering some serious benefits for engineers.</p>
   </div>
     <svg viewBox="0 0 577 577" preserveAspectRatio="none">
       <rect class="base" width="577" height="577" />

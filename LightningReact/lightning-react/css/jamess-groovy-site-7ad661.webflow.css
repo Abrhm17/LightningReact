@@ -2813,6 +2813,8 @@ figcaption {
 @media screen and (max-width: 767px) {
   .quick-stack-3 {
     grid-template-columns: 1fr !important;
+        max-height: none;
+    height: auto;
   }
 }
 .sidebar {
