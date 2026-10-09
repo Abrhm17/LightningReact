@@ -44,7 +44,7 @@ return (
 <ul class="about-features" role="list">
   <li>
     <h4>Human-centred</h4>
-    <p>We are particularly interested in the underlying problems. If AI is to be a success, the technology must reach a kind of equilibrium where it becomes a vibrant part of our world, like smartphones, graphical user interfaces, the Internet and World Wide Web. If we all do converge on a sane and stable system that makes people happy, then at Lightning Start we feel it is better to get there sooner than later. We would love to contribute to that dialog and that endeavour.</p>
+    <p>We are particularly interested in the underlying problems. If AI is to be a success, the technology must reach a kind of equilibrium where it becomes a vibrant part of our world, like smartphones, graphical user interfaces, the Internet and World Wide Web. If we do converge on a sane and stable system that makes people happy, then at Lightning Start we feel it is better to get there sooner than later. We would love to contribute to that dialog and that endeavour.</p>
   </li>
   <li>
     <h4>Quality</h4>
