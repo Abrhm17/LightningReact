@@ -1,5 +1,5 @@
 .about-features {
-  list-style: none;
+  list-style: none !important;
   padding: 0;
   margin: 24px 0;
 }
@@ -13,7 +13,8 @@
 }
 
 .about-features li::before {
-  content: "";
+  list-style: none;
+    content: none;
   position: absolute;
   left: 0;
   top: 9px;
