@@ -1,5 +1,6 @@
 import "./../css/normalize.css";
 import "./../css/webflow.css";
+import "./../css/about.css";
 import ".//../css/jamess-groovy-site-7ad661.webflow.css";
 import { Link } from "react-router-dom";
 
@@ -30,20 +31,43 @@ return (
   </div>
   <div class="code-embed w-embed">
   </div>
-  <div class="section">
-    <div class="container">
-      <div class="rich-text w-richtext">
-        <h2>What’s a Rich Text element?</h2>
-        <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content. </p>
-        <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
-        <ul role="list">
-          <li>The rich text element allows you to create and format headgsgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgdgdgings</li>
-          <li>Headings, paragraphs, blockquotes, figures, images, and figure captions</li>
-          <li>A rich text element can be used with static or dynamic content.</li>
-        </ul>
-      </div>
+
+<div class="section">
+  <div class="container">
+    <div class="rich-text w-richtext">
+      <h2>About Our Company</h2>
+      <p>We are a forward-thinking company dedicated to technological innovation that works for human beings. Built on a foundation of trust, quality, and professionalism, we strive to make a meaningful difference through everything we do.</p>
+      <p>Our pioneering Lightning Start framework is more than an AI harness or "AI on the rails": it is a powerful new concept that allows us to leverage the new tools to supercharge our creativity, avoiding employee burnout and many of the other drawbacks associated with AI.</p>
+      <p>Our team combines industry expertise, creativity, and a customer-first approach to help businesses and individuals achieve their goals. We believe in building strong relationships, embracing new opportunities, and continuously improving our services to meet the evolving needs of our customers.</p>
+
+      <h3>What Sets Us Apart</h3>
+<ul class="about-features" role="list">
+  <li>
+    <h4>Human-centred</h4>
+    <p>We are particularly interested in the underlying problems. If AI is to succeed, the technology must reach a kind of equilibrium where it becomes a vibrant part of our world, like smartphones, graphical user interfaces, the Internet and World Wide Web. If we all do converge on a sane and stable system that makes people happy, then at Lightning Start we feel it is better to get there sooner than later. We would love to contribute to that dialog and that endeavour.</p>
+  </li>
+  <li>
+    <h4>Quality</h4>
+    <p>We maintain high standards in every project, product, and service we provide. Our multi-tiered quality assurance process evaluates every aspect of our work from multiple perspectives, ensuring adherence to the highest standards.</p>
+  </li>
+    <li>
+    <h4>Innovation</h4>
+    <p>We are an exciting company with new ideas and technologies. We operate in a greenfield market where the lack of entrenched convention creates lots of new possibilities.</p>
+  </li>
+  <li>
+    <h4>Customer Committment</h4>
+    <p>We are dedicated to our customers. We aim to give our customers exactly the kind of user experience they want. We will embrace their suggestions to the best of our abilities to give them the products they need to meet their unique needs.</p>
+  </li>
+</ul>
+      <h3>Our Mission</h3>
+      <p>Our mission is to empower our customers through our innovative products, through attention to detail, and exceptional customer experiences. We are committed to creating long-term partnerships built on integrity, transparency, and mutual success.</p>
+
+      <h3>Our Vision</h3>
+      <p>We aim to become a trusted leader in the tech ecosystem, recognized for our dedication to excellence, customer satisfaction, and positive impact. With the Lightning Start framework as starting point, there are many adjacent markets for us to move into, with the same ethos as before, and the expertise gained and lessons learned.</p>
     </div>
   </div>
+</div>
+
   <div class="section footer">
     <div class="container">
       <div class="w-layout-grid footer">
