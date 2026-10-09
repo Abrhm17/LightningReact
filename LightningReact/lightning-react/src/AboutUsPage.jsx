@@ -36,7 +36,7 @@ return (
   <div class="container">
     <div class="rich-text w-richtext">
       <h2>About Our Company</h2>
-      <p>We are a forward-thinking company dedicated to technological innovation that works for human beings. Built on a foundation of trust, quality, and professionalism, we strive to make a meaningful difference through everything we do.</p>
+      <p>We are a dynamic, forward-thinking company dedicated to technological innovation that works for human beings. Built on a foundation of trust, quality, and professionalism, we strive to make a meaningful difference through our products and everything we do.</p>
       <p>Our pioneering Lightning Start framework is more than an AI harness or "AI on the rails": it is a powerful new concept that allows us to leverage the new tools to supercharge our creativity, avoiding employee burnout and many of the other drawbacks associated with AI.</p>
       <p>Our team combines industry expertise, creativity, and a customer-first approach to help businesses and individuals achieve their goals. We believe in building strong relationships, embracing new opportunities, and continuously improving our services to meet the evolving needs of our customers.</p>
 
@@ -44,7 +44,7 @@ return (
 <ul class="about-features" role="list">
   <li>
     <h4>Human-centred</h4>
-    <p>We are particularly interested in the underlying problems. If AI is to be a success, the technology must reach a kind of equilibrium where it becomes a vibrant part of our world, like smartphones, graphical user interfaces, the Internet and World Wide Web. If we do converge on a sane and stable system that makes people happy, then at Lightning Start we feel it is better to get there sooner than later. We would love to contribute to that dialog and that endeavour.</p>
+    <p>We are particularly interested in the underlying problems. If AI is to be a success, the technology must reach a kind of equilibrium where it becomes a vibrant part of our world, like smartphones, graphical user interfaces, the Internet and World Wide Web. If we do converge on a sane and stable system that makes people happy, then at Lightning Start we feel it is better to get there sooner than later. We would love to contribute to that dialog and endeavour.</p>
   </li>
   <li>
     <h4>Quality</h4>
