@@ -14,7 +14,7 @@
 
 .about-features li::before {
   list-style: none;
-    content: none;
+    content: "";
   position: absolute;
   left: 0;
   top: 9px;
