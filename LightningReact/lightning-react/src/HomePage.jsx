@@ -22,7 +22,7 @@ return (
       <div class="navigation-wrap">
         {/* <a href="products.html" class="navigation-item w-nav-link">Documentation</a> */}
             <Link to="/documentation" className="navigation-item w-nav-link">
-              Documentation
+              Learn More
             </Link>
            <Link to="/about" className="navigation-item w-nav-link">
               About
@@ -137,10 +137,12 @@ return (
         <a href="index.html" id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971b-87e29718" aria-current="page" class="logo-link w-inline-block w--current"></a>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971d-87e29718" class="label">Menu</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971f-87e29718" class="links-section-footer">
-          <a href="index.html" aria-current="page" class="footer-link w--current">Home</a>
+      <Link to="/" className="footer-link">
+  Home
+</Link>
 
             <Link to="/documentation" className="footer-link">
-              Documentation
+              Learn More
             </Link>
           {/* <a href="about.html" class="footer-link">Documentation</a> */}          
             <Link to="/about" className="footer-link">

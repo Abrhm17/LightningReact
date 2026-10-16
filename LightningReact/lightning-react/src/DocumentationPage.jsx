@@ -4,7 +4,33 @@ import { Link } from "react-router-dom";
 //import "./normalize.css";
 import "./../css/normalize.css";
 import "./../css/webflow.css";
+import "./../css/documentation.css";
 
+export function BasicConcepts(){
+  <div class="section">
+    <div class="container">
+      <div class="rich-text w-richtext">
+        <h2>Introduction</h2>
+        <h3 class="documentation-subheader">Overview</h3>
+
+
+        <pre contenteditable="false" class="w-code-block" style={{
+  display: "block",
+  overflowX: "auto",
+  background: "#2b2b2b",
+  color: "#f8f8f2",
+  padding: "0.5em"
+}}><code class="language-javascript" style={{ whiteSpace: "pre-wrap" }}><span><span>Yo, dis is a code insert</span></span></code></pre>
+        <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+        <ul role="list">
+          <li>The rich text element allows you to create and format headgsgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgdgdgings</li>
+          <li>Headings, paragraphs, blockquotes, figures, images, and figure captions</li>
+          <li>A rich text element can be used with static or dynamic content.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+}
 
 export default function DocumentationPage(){
 return (
@@ -12,11 +38,25 @@ return (
 <main class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
     <div class="navigation-items">
-      <a href="index.html" class="logo-link w-nav-brand"><img src="images/LS_arc_logo_blue.png" width="80" sizes="(max-width: 479px) 77vw, 80px" srcset="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w" alt="" class="logo-image"/></a>
-      <div class="navigation-wrap">
-        <a href="products.html" class="navigation-item w-nav-link">Documentation</a>
-        <a href="about.html" class="navigation-item w-nav-link">About</a>
-        <a href="contact.html" class="navigation-item w-nav-link">Contact</a>
+<Link to="/" className="logo-link w-nav-brand">
+  <img
+    src="images/LS_arc_logo_blue.png"
+    width="80"
+    sizes="(max-width: 479px) 77vw, 80px"
+    srcSet="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w"
+    alt="Home"
+    className="logo-image"
+  />
+</Link>      <div class="navigation-wrap">
+  <Link to="/documentation" className="navigation-item w-nav-link">
+  Learn More
+</Link>
+<Link to="/about" className="navigation-item w-nav-link">
+  About
+</Link>
+<Link to="/contact" className="navigation-item w-nav-link">
+  Contact
+</Link>
       </div>
       {/* <a href="#" class="button w-button">Get Started</a> */}
       <div class="navigation-wrap">
@@ -58,21 +98,29 @@ return (
   <div class="section">
     <div class="container">
       <div class="rich-text w-richtext">
-        <h2>What’s a Rich Text element?</h2>
-        <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content. </p>
-        <pre contenteditable="false" class="w-code-block" style={{
-  display: "block",
-  overflowX: "auto",
-  background: "#2b2b2b",
-  color: "#f8f8f2",
-  padding: "0.5em"
-}}><code class="language-javascript" style={{ whiteSpace: "pre-wrap" }}><span><span>Yo, dis is a code insert</span></span></code></pre>
-        <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
-        <ul role="list">
-          <li>The rich text element allows you to create and format headgsgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgdgdgings</li>
-          <li>Headings, paragraphs, blockquotes, figures, images, and figure captions</li>
-          <li>A rich text element can be used with static or dynamic content.</li>
-        </ul>
+        <h2>What is Lightning Start?</h2>
+        <h3 class="documentation-subheader" id="overview" href="#overview">Overview</h3>
+        <p>Welcome to Lighting Start (LS)! LS is a powerful code generation platform which allows you to combine AI-generated portions with deterministically generated, reusable code which has been vetted for quality. This union of the two, exploiting the strengths of each, empowers you to create code faster than before with higher quality. </p>
+<p>
+In this page we give a high-level overview of LS and ask what problems it is designed to solve.
+</p>
+
+<h3 class="documentation-subheader" id="codegeneration" href="#codegeneration" >Why Code Generation?</h3>
+<p>You will probably already be familiar with at least two different kinds of code generation. </p>
+
+<p>For one, there are <i>compilers</i>. Here a source language facilitates the generation of code in another, target language. Thus a C++ compiler, presented with valid C++ code, will generate C, which when presented to a C compiler generates Assembly. TypeScript generates files in JavaScript. And so on and so forth. Compilers have been a fundamental part of programming since the inception of digital electronic computers.</p>
+
+<p>Another is much more recent: AI-assisted programming. 
+  Here, an ordinary language prompt is fed into a Large Language Model (LLM) which will return generated code in a language of your choice. This technology is extremely powerful and offers many possible advantages to the modern developer. However, the potential pitfalls are equally daunting. Since AIs created by deep learning methods are essentially 'black boxes', there can be no guarantees on the reliability or quality of LLM-generated code. Since this feature appears to be baked in, we can expect it to be an aspect of AI-assisted development for a long time to come.</p>
+    
+<p>Another type of code generation is much more niche: scaffolding code generation. These generators take a limited number of inputs, e.g. from a GUI wizard or an OpenAPI specification. They generate scaffolding which helps you to get started in your project. These generators have one big advantage over LLMs in that they are deterministic, so the code they yield is guaranteed to work. We can also assume it has been vetted by a professional developer. Unfortunately, these generators tend to only cover a small number of use cases. They lack flexibility and offer little or no customisability when it comes to more complex requirements. As a result, this type of code generation has only found niche and specialized uses across the industry.</p>
+
+<p>Broadly, we generate code because it is too time-consuming or impractical to write the code by hand ourselves in the target language. The field is constantly evolving its ideas on fruitful code generation methodologies.</p>
+
+
+<h3 class="documentation-subheader" id="lightningstart" href="#lightningstart" >Why Lightning Start?</h3>
+<p>LS is a code generation framework which promotes iterative and experimental development - especially suited for the modern developer who, more and more, is expected to be conversant with many technologies and to produce demoable work consistently. It is intended to allow you to focus your time on solving problems and doing creative work, rather than spending a large percentage of every day 'fighting the AI' - or giving up and writing the boilerplate yourself! With LS you can draw up a high-level schema and generate a starter project from it. You can do things like experiment with different libraries, even languages, that normally would not be possible due to time constraints. Using this framework, you learn more, and each time you hit Generate you will have a demoable project. Whenever you want to extend the generated project, the framework may provide a faster way of doing so. And if not, it gives you the freedom to write whatever custom code you like rather than constraining you to always stay on the rails.</p>
+
       </div>
     </div>
   </div>

@@ -1,5 +1,8 @@
 import * as React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DocumentationPage from "./DocumentationPage";
+import BasicConceptsDocumentation from "./BasicConceptsDocumentation";
 import "./../css/documentation.css";
 import {
   styled,
@@ -107,28 +110,62 @@ function StormDrawerInner() {
       [section]: !prev[section],
     }));
   };
+ const navigate = useNavigate();
+
+const [currentPage, setCurrentPage] = React.useState("intro");
+
+function changePage(state){
+  console.log('CHANGE PAGE IS');
+  console.log(state);
+  setCurrentPage(state);
+window.location.hash = state;
+jumpTo(state);
+
+}
+const jumpTo = (id) => {
+document.getElementById(id).scrollIntoView();
+
+};
+
+const renderPage = () => {
+    switch (currentPage) {
+      case "intro":
+        return <DocumentationPage />;
+
+      case "concepts":
+        return <BasicConceptsDocumentation />;
+
+      case "schema":
+        return <BasicConceptsDocumentation />;
+        
+      default:
+        return <DocumentationPage />;
+    }
+  };
+  
+  const goToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
 
   const menu = [
     {
-      title: "Getting Started",
+      title: "Introduction to LS",
+      state: "intro",
       icon: <DashboardIcon />,
-      children: ["Overview", "Installation"],
-    },
-    {
-      title: "Features",
-      icon: <FlashOnIcon />,
-      children: ["Lightning", "Performance"],
-    },
-    {
-      title: "Advanced",
-      icon: <BuildIcon />,
-      children: ["Customization", "API"],
-    },
-    {
-      title: "System",
-      icon: <SpeedIcon />,
-      children: ["Status", "Logs"],
-    },
+      children: [
+      { title: "Overview", path: "overview" },
+      { title: "Why Code Generation?", path: "codegeneration" },
+     { title: "Why Lightning Start?", path: "lightningstart" }
+    ]
+    }
+
   ];
 
   return (
@@ -188,6 +225,7 @@ function StormDrawerInner() {
 
         <List>
           {menu.map((section) => {
+            console.log('SECTION IS');
             const isOpen = openSections[section.title];
 
             return (
@@ -195,7 +233,8 @@ function StormDrawerInner() {
                 {/* Section Header */}
                 <ListItem disablePadding>
                   <ListItemButton
-                    onClick={() => toggleSection(section.title)}
+                    onClick={() => 
+                      toggleSection(section.title)}
                     sx={{
                       mx: 1,
                       my: 0.5,
@@ -223,33 +262,40 @@ function StormDrawerInner() {
                 {/* Children */}
                 <Collapse in={isOpen} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
-                    {section.children.map((item) => (
-                      <ListItem key={item} disablePadding>
-                        <ListItemButton
-                          sx={{
-                            pl: 5,
-                            opacity: 0.85,
-                            "&:hover": {
-                              background: "rgba(255,255,255,0.04)",
-                            },
-                          }}
-                        >
-                          <ListItemText primary={item} />
-                        </ListItemButton>
-                      </ListItem>
-                    ))}
+              {section.children.map((item) => (
+  <ListItem key={item.path} disablePadding>
+    <ListItemButton
+      id={item}
+      selected={currentPage === item.path}
+      onClick={() => changePage(item.path)}
+      sx={{
+        pl: 5,
+        opacity: 0.85,
+        "&:hover": {
+          background: "rgba(255,255,255,0.04)",
+        },
+        "&.Mui-selected": {
+          background: "rgba(125,211,252,0.12)",
+          color: "#7dd3fc",
+        },
+      }}
+    >
+      <ListItemText primary={item.title} />
+    </ListItemButton>
+  </ListItem>
+))}
                   </List>
                 </Collapse>
               </React.Fragment>
             );
           })}
         </List>
-      </Drawer>
+      </Drawer>   
 
       {/* 📄 Main Content */}
        <Main open={open}>
-
-      <DocumentationPage/>
+      {renderPage()}
+      {/* <DocumentationPage/> */}
 
        </Main>
       {/* <Main open={open}>
@@ -283,6 +329,8 @@ function StormDrawerInner() {
     </Box>
   );
 }
+
+
 
 export default function StormDrawer() {
   return (
