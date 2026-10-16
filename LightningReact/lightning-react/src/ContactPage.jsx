@@ -13,7 +13,7 @@ return (
       <div class="navigation-wrap">
         {/* <a href="products.html" class="navigation-item w-nav-link">Documentation</a> */}
             <Link to="/documentation" className="navigation-item w-nav-link">
-              Documentation
+              Learn More
             </Link>
            <Link to="/about" className="navigation-item w-nav-link">
               About
