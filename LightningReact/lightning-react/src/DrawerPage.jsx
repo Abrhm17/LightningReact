@@ -2,7 +2,6 @@ import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import DocumentationPage from "./DocumentationPage";
-import BasicConceptsDocumentation from "./BasicConceptsDocumentation";
 import "./../css/documentation.css";
 import {
   styled,
@@ -131,12 +130,6 @@ const renderPage = () => {
     switch (currentPage) {
       case "intro":
         return <DocumentationPage />;
-
-      case "concepts":
-        return <BasicConceptsDocumentation />;
-
-      case "schema":
-        return <BasicConceptsDocumentation />;
         
       default:
         return <DocumentationPage />;
