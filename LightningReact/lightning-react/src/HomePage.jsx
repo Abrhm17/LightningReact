@@ -154,7 +154,7 @@ return (
         </div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29724-87e29718" class="label">PRODUCTS</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29726-87e29718" class="links-section-footer">
-          <a href="index.html" aria-current="page" class="footer-link w--current">LS Desktop</a>
+          <a href="https://apps.microsoft.com/detail/9p9vwp5ght82?hl=en-GB&gl=GB" aria-current="page" class="footer-link w--current">LS Desktop</a>
         </div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2972d-87e29718" class="label">Help</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2972f-87e29718" class="links-section-footer">
@@ -166,9 +166,8 @@ return (
           <div class="paragraph-tiny">Powered by Webflow</div>
         </a>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29738-87e29718" class="links-section-footer">
-          <a href="https://www.instagram.com/webflowapp/" target="_blank" class="footer-link">Twitter</a>
-          <a href="https://www.facebook.com/webflow/" target="_blank" class="footer-link">Facebook</a>
-          <a href="https://twitter.com/webflow" target="_blank" class="footer-link">Twitter</a>
+          <a href="https://x.com/LightningStartX" target="_blank" class="footer-link">X</a>
+          <a href="https://www.threads.net/@lightningstarttech," target="_blank" class="footer-link">Threads</a>
         </div>
       </div>
     </div>

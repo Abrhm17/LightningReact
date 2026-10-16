@@ -149,9 +149,8 @@ In this page we give a high-level overview of LS and ask what problems it is des
           <div class="paragraph-tiny">Powered by Webflow</div>
         </a>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29738-87e29718" class="links-section-footer">
-          <a href="https://www.instagram.com/webflowapp/" target="_blank" class="footer-link">Twitter</a>
-          <a href="https://www.facebook.com/webflow/" target="_blank" class="footer-link">Facebook</a>
-          <a href="https://twitter.com/webflow" target="_blank" class="footer-link">Twitter</a>
+             <a href="https://x.com/LightningStartX" target="_blank" class="footer-link">X</a>
+          <a href="https://www.threads.net/@lightningstarttech," target="_blank" class="footer-link">Threads</a>
         </div>
       </div>
     </div>

@@ -153,21 +153,21 @@ return (
   <div class="section">
     <div class="container">
       <div class="rich-text w-richtext">
-        <h2>What’s a Rich Text element?</h2>
-        <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content. </p>
-        <pre contenteditable="false" class="w-code-block" style={{
-  display: "block",
-  overflowX: "auto",
-  background: "#2b2b2b",
-  color: "#f8f8f2",
-  padding: "0.5em"
-}}><code class="language-javascript" style={{ whiteSpace: "pre-wrap" }}><span><span>Yo, dis is a code insert</span></span></code></pre>
-        <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
-        <ul role="list">
-          <li>The rich text element allows you to create and format headgsgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgsdgdgdgings</li>
-          <li>Headings, paragraphs, blockquotes, figures, images, and figure captions</li>
-          <li>A rich text element can be used with static or dynamic content.</li>
-        </ul>
+        <p>Welcome to Lighting Start (LS)! LS is a powerful code generation platform which allows you to combine AI-generated portions with deterministically generated, reusable code which has been vetted for quality. This union of the two, exploiting the strengths of each, empowers you to create code faster than before with higher quality. </p>
+        <p>In this page we give a high-level overview of LS and ask what problems it is designed to solve.
+        </p>
+<p>You will probably already be familiar with at least two different kinds of code generation. </p>
+
+<p>For one, there are <i>compilers</i>. Here a source language facilitates the generation of code in another, target language. Thus a C++ compiler, presented with valid C++ code, will generate C, which when presented to a C compiler generates Assembly. TypeScript generates files in JavaScript. And so on and so forth. Compilers have been a fundamental part of programming since the inception of digital electronic computers.</p>
+
+<p>Another is much more recent: AI-assisted programming. 
+  Here, an ordinary language prompt is fed into a Large Language Model (LLM) which will return generated code in a language of your choice. This technology is extremely powerful and offers many possible advantages to the modern developer. However, the potential pitfalls are equally daunting. Since AIs created by deep learning methods are essentially 'black boxes', there can be no guarantees on the reliability or quality of LLM-generated code. Since this feature appears to be baked in, we can expect it to be an aspect of AI-assisted development for a long time to come.</p>
+    
+<p>Another type of code generation is much more niche: scaffolding code generation. These generators take a limited number of inputs, e.g. from a GUI wizard or an OpenAPI specification. They generate scaffolding which helps you to get started in your project. These generators have one big advantage over LLMs in that they are deterministic, so the code they yield is guaranteed to work. We can also assume it has been vetted by a professional developer. Unfortunately, these generators tend to only cover a small number of use cases. They lack flexibility and offer little or no customisability when it comes to more complex requirements. As a result, this type of code generation has only found niche and specialized uses across the industry.</p>
+
+<p>Broadly, we generate code because it is too time-consuming or impractical to write the code by hand ourselves in the target language. The field is constantly evolving its ideas on fruitful code generation methodologies.</p>
+
+
       </div>
     </div>
   </div>
@@ -184,7 +184,7 @@ return (
         </div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29724-87e29718" class="label">PRODUCTS</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29726-87e29718" class="links-section-footer">
-          <a href="index.html" class="footer-link">LS Desktop</a>
+          <a href="https://apps.microsoft.com/detail/9p9vwp5ght82?hl=en-GB&gl=GB" class="footer-link">LS Desktop</a>
         </div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2972d-87e29718" class="label">Help</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2972f-87e29718" class="links-section-footer">
@@ -196,9 +196,8 @@ return (
           <div class="paragraph-tiny">Powered by Webflow</div>
         </a>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e29738-87e29718" class="links-section-footer">
-          <a href="https://www.instagram.com/webflowapp/" target="_blank" class="footer-link">Twitter</a>
-          <a href="https://www.facebook.com/webflow/" target="_blank" class="footer-link">Facebook</a>
-          <a href="https://twitter.com/webflow" target="_blank" class="footer-link">Twitter</a>
+             <a href="https://x.com/LightningStartX" target="_blank" class="footer-link">X</a>
+          <a href="https://www.threads.net/@lightningstarttech," target="_blank" class="footer-link">Threads</a>
         </div>
       </div>
     </div>
@@ -226,26 +225,26 @@ function StormDrawerInner() {
   };
 
   const menu = [
+    // {
+    //   title: "Getting Started",
+    //   icon: <DashboardIcon />,
+    //   children: ["Overview", "Installation"],
+    // },
     {
-      title: "Getting Started",
-      icon: <DashboardIcon />,
-      children: ["Overview", "Installation"],
-    },
-    {
-      title: "Features",
+      title: "What is Lightning Start?",
       icon: <FlashOnIcon />,
-      children: ["Lightning", "Performance"],
+      children: ["Why Code Generation?", "Performance"],
     },
-    {
-      title: "Advanced",
-      icon: <BuildIcon />,
-      children: ["Customization", "API"],
-    },
-    {
-      title: "System",
-      icon: <SpeedIcon />,
-      children: ["Status", "Logs"],
-    },
+    // {
+    //   title: "Advanced",
+    //   icon: <BuildIcon />,
+    //   children: ["Customization", "API"],
+    // },
+    // {
+    //   title: "System",
+    //   icon: <SpeedIcon />,
+    //   children: ["Status", "Logs"],
+    // },
   ];
 
   return (

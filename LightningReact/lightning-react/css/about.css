@@ -14,14 +14,14 @@
 
 .about-features li::before {
   list-style: none;
-    content: "";
+  content: "\26A1\FE0E";
+color: #d3d3d3;
   position: absolute;
   left: 0;
   top: 9px;
-  width: 9px;
-  height: 9px;
-  background-color: #d3d3d3;
-  border-radius: 50%;
+  /* width: 9px;
+  height: 9px; */
+  /* border-radius: 50%; */
 }
 
 .about-features h4 {
