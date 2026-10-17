@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function ContactPage(){
 return (
 <div>
-    <main class="body">
+<main class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
     <div class="navigation-items">
       <Link to="/" className="logo-link w-nav-brand w--current"><img src="images/LS_arc_logo_blue.png" width="80" sizes="(max-width: 479px) 77vw, 80px" srcset="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w" alt="" class="logo-image"/></Link>
@@ -21,12 +21,10 @@ return (
                <Link to="/contact" className="navigation-item w-nav-link">
               Contact
             </Link>
+                  <a href="https://apps.microsoft.com/detail/9p9vwp5ght82?hl=en-GB&gl=GB" class="button w-button ">Get Started</a>
+
       </div>
-      <a href="#" class="button w-button">Get Started</a>
-      <div class="navigation-wrap">
-        <div class="menu-button w-nav-button"><img src="images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon"/></div>
       </div>
-    </div>
   </div>
   <div class="section">
     <div class="container cc-heading-wrap contact-headline">
