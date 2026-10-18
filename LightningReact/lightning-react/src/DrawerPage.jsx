@@ -99,10 +99,9 @@ function StormDrawerInner() {
   const muiTheme = useTheme();
   const [open, setOpen] = React.useState(true);
 
-  const [openSections, setOpenSections] = React.useState({
-    "Getting Started": true,
-  });
-
+const [openSections, setOpenSections] = React.useState({
+  "Introduction to LS": true
+});
   const toggleSection = (section) => {
     setOpenSections((prev) => ({
       ...prev,
