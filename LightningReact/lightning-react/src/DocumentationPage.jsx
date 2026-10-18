@@ -11,7 +11,7 @@ export function BasicConcepts(){
     <div class="container">
       <div class="rich-text w-richtext">
         <h2>Introduction</h2>
-        <h3 class="documentation-subheader">Overview</h3>
+        <h3 class="learning-centre-subheader">Overview</h3>
 
 
         <pre contenteditable="false" class="w-code-block" style={{
@@ -32,7 +32,7 @@ export function BasicConcepts(){
   </div>
 }
 
-export default function DocumentationPage(){
+export default function Documentation(){
 return (
 <div>
 <main class="body">
@@ -48,7 +48,7 @@ return (
     className="logo-image"
   />
 </Link>      <div class="navigation-wrap">
-  <Link to="/documentation" className="navigation-item w-nav-link">
+  <Link to="/learning-centre" className="navigation-item w-nav-link">
   Learn More
 </Link>
 <Link to="/about" className="navigation-item w-nav-link">
@@ -99,13 +99,13 @@ return (
     <div class="container">
       <div class="rich-text w-richtext">
         <h2>What is Lightning Start?</h2>
-        <h3 class="documentation-subheader" id="overview" href="#overview">Overview</h3>
+        <h3 class="learning-centre-subheader" id="overview" href="#overview">Overview</h3>
         <p>Welcome to Lighting Start (LS)! LS is a powerful code generation platform which allows you to combine AI-generated portions with deterministically generated, reusable code which has been vetted for quality. This union of the two, exploiting the strengths of each, empowers you to create code faster than before with higher quality. </p>
 <p>
 In this page we give a high-level overview of LS and ask what problems it is designed to solve.
 </p>
 
-<h3 class="documentation-subheader" id="codegeneration" href="#codegeneration" >Why Code Generation?</h3>
+<h3 class="learning-centre-subheader" id="codegeneration" href="#codegeneration" >Why Code Generation?</h3>
 <p>You will probably already be familiar with at least two different kinds of code generation. </p>
 
 <p>For one, there are <i>compilers</i>. Here a source language facilitates the generation of code in another, target language. Thus a C++ compiler, presented with valid C++ code, will generate C, which when presented to a C compiler generates Assembly. TypeScript generates files in JavaScript. And so on and so forth. Compilers have been a fundamental part of programming since the inception of digital electronic computers.</p>
@@ -118,7 +118,7 @@ In this page we give a high-level overview of LS and ask what problems it is des
 <p>Broadly, we generate code because it is too time-consuming or impractical to write the code by hand ourselves in the target language. The field is constantly evolving its ideas on fruitful code generation methodologies.</p>
 
 
-<h3 class="documentation-subheader" id="lightningstart" href="#lightningstart" >Why Lightning Start?</h3>
+<h3 class="learning-centre-subheader" id="lightningstart" href="#lightningstart" >Why Lightning Start?</h3>
 <p>LS is a code generation framework which promotes iterative and experimental development - especially suited for the modern developer who, more and more, is expected to be conversant with many technologies and to produce demoable work consistently. It is intended to allow you to focus your time on solving problems and doing creative work, rather than spending a large percentage of every day 'fighting the AI' - or giving up and writing the boilerplate yourself! With LS you can draw up a high-level schema and generate a starter project from it. You can do things like experiment with different libraries, even languages, that normally would not be possible due to time constraints. Using this framework, you learn more, and each time you hit Generate you will have a demoable project. Whenever you want to extend the generated project, the framework may provide a faster way of doing so. And if not, it gives you the freedom to write whatever custom code you like rather than constraining you to always stay on the rails.</p>
 
       </div>
@@ -131,7 +131,7 @@ In this page we give a high-level overview of LS and ask what problems it is des
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971d-87e29718" class="label">Menu</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971f-87e29718" class="links-section-footer">
           <a href="index.html" class="footer-link">Home</a>
-          <a href="about.html" class="footer-link">Documentation</a>
+          <a href="about.html" class="footer-link">learning-centre</a>
           <a href="contact.html" class="footer-link">About</a>
           <a href="products.html" class="footer-link">Contact</a>
         </div>

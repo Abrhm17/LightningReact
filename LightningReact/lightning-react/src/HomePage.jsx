@@ -21,7 +21,7 @@ return (
       <Link to="/" className="logo-link w-nav-brand w--current"><img src="images/LS_arc_logo_blue.png" width="80" sizes="(max-width: 479px) 77vw, 80px" srcset="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w" alt="" class="logo-image"/></Link>
       <div class="navigation-wrap">
         {/* <a href="products.html" class="navigation-item w-nav-link">Documentation</a> */}
-            <Link to="/documentation" className="navigation-item w-nav-link">
+            <Link to="/learning-centre" className="navigation-item w-nav-link">
               Learn More
             </Link>
            <Link to="/about" className="navigation-item w-nav-link">
@@ -51,8 +51,8 @@ return (
           <div class="div-block-8"> With Lighting Start Desktop</div>
                 <div class="div-block-5">
    
-       <Link to="/documentation" className="button-2 w-button">Explore Features   </Link>
-          <a href="#" class="button-3 w-button">What is Lightning Start?</a>
+       <Link to="/learning-centre" className="button-2 w-button">Explore Features   </Link>
+              <Link to="/learning-centre#lightningstart" class="button-3 w-button">What is Lightning Start? </Link>
         </div>
         </div>
   
@@ -141,7 +141,7 @@ return (
   Home
 </Link>
 
-            <Link to="/documentation" className="footer-link">
+            <Link to="/learning-centre" className="footer-link">
               Learn More
             </Link>
           {/* <a href="about.html" class="footer-link">Documentation</a> */}          

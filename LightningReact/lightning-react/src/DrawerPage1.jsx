@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import "./../css/normalize.css";
 import "./../css/webflow.css";
 
-import DocumentationPage from "./DocumentationPage";
+import documentation from "./DocumentationPage";
 
 import {
   styled,
@@ -107,16 +107,24 @@ return (
 <main class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
     <div class="navigation-items">
-      <a href="index.html" class="logo-link w-nav-brand"><img src="images/LS_arc_logo_blue.png" width="80" sizes="(max-width: 479px) 77vw, 80px" srcset="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w" alt="" class="logo-image"/></a>
+      <Link to="/" className="logo-link w-nav-brand w--current"><img src="images/LS_arc_logo_blue.png" width="80" sizes="(max-width: 479px) 77vw, 80px" srcset="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w" alt="" class="logo-image"/></Link>
       <div class="navigation-wrap">
-        <a href="products.html" class="navigation-item w-nav-link">Documentation</a>
-        <a href="about.html" class="navigation-item w-nav-link">About</a>
-        <a href="contact.html" class="navigation-item w-nav-link">Contact</a>
+        {/* <a href="products.html" class="navigation-item w-nav-link">learning-centre</a> */}
+            <Link to="/learning-centre" className="navigation-item w-nav-link">
+              Learn More
+            </Link>
+           <Link to="/about" className="navigation-item w-nav-link">
+              About
+            </Link>
+               <Link to="/contact" className="navigation-item w-nav-link">
+              Contact
+            </Link>
+                  <a href="https://apps.microsoft.com/detail/9p9vwp5ght82?hl=en-GB&gl=GB" class="button w-button ">Get Started</a>
+
       </div>
-      <a href="#" class="button w-button">Get Started</a>
-      <div class="navigation-wrap">
+      {/* <div class="navigation-wrap">
         <div class="menu-button w-nav-button"><img src="images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon"/></div>
-      </div>
+      </div> */}
     </div>
   </div>
   <div class="code-embed w-embed">
@@ -178,7 +186,7 @@ return (
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971d-87e29718" class="label">Menu</div>
         <div id="w-node-_88a386dd-8f07-0c34-70f0-2d9f87e2971f-87e29718" class="links-section-footer">
           <a href="index.html" class="footer-link">Home</a>
-          <a href="about.html" class="footer-link">Documentation</a>
+          <a href="about.html" class="footer-link">learning-centre</a>
           <a href="contact.html" class="footer-link">About</a>
           <a href="products.html" class="footer-link">Contact</a>
         </div>
@@ -365,7 +373,7 @@ function StormDrawerInner() {
       {/* 📄 Main Content */}
        <Main open={open}>
 
-      <DocumentationPage/>
+      <learning-centrePage/>
 
        </Main>
       {/* <Main open={open}>

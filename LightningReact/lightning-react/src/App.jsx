@@ -13,11 +13,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/features" element={<FeaturesPage />} /> */}
-         <Route path="/documentation" element={<DrawerPage />} />
-         <Route path="/drawer" element={<DrawerPage />} />
+         <Route path="/learning-centre" element={<DrawerPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutUsPage />} />
-         <Route path="/drawer1" element={<DrawerPage1 />} />
 
       </Routes>
     </BrowserRouter>

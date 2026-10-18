@@ -1800,3 +1800,28 @@ color: lightgrey;
 .wf-layout-layout {
   display: grid;
 }
+.section > .container .w-layout-grid {
+  transform: translateX(-100px);
+}
+
+@media screen and (max-width: 767px) {
+   .section > .container .w-layout-grid {
+    transform: translateX(0);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+.label,
+   .links-section-footer {
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+  }
+
+ .links-section-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -13,7 +13,7 @@ return (
       <Link to="/" className="logo-link w-nav-brand w--current"><img src="images/LS_arc_logo_blue.png" width="80" sizes="(max-width: 479px) 77vw, 80px" srcset="images/LS_arc_logo_blue-p-500.png 500w, images/LS_arc_logo_blue.png 577w" alt="" class="logo-image"/></Link>
       <div class="navigation-wrap">
         {/* <a href="products.html" class="navigation-item w-nav-link">Documentation</a> */}
-            <Link to="/documentation" className="navigation-item w-nav-link">
+            <Link to="/learning-centre" className="navigation-item w-nav-link">
               Learn More
             </Link>
            <Link to="/about" className="navigation-item w-nav-link">
