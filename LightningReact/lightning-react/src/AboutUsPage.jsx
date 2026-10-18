@@ -61,7 +61,7 @@ return (
       <p>Our mission is to empower our customers through our innovative products, through attention to detail, and exceptional customer experiences. We are committed to creating long-term partnerships built on integrity, transparency, and mutual success.</p>
 
       <h3>Our Vision</h3>
-      <p>We aim to become a trusted leader in the European tech ecosystem, recognized for our dedication to excellence, customer satisfaction, and positive impact. With the Lightning Start framework as starting point, there are many adjacent markets for us to move into, with the same ethos as before, and the expertise gained and lessons learned.</p>
+      <p>We aim to become a trusted leader in the European tech ecosystem, recognised for our dedication to excellence, customer satisfaction, and positive impact. With the Lightning Start framework as starting point, there are many adjacent markets for us to move into, with the same ethos as before, and the expertise gained and lessons learned.</p>
     </div>
   </div>
 </div>
