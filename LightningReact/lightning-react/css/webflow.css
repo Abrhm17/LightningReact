@@ -1800,12 +1800,12 @@ color: lightgrey;
 .wf-layout-layout {
   display: grid;
 }
-.section > .container .w-layout-grid {
+.section > .container .w-layout-grid.footer {
   transform: translateX(-100px);
 }
 
 @media screen and (max-width: 767px) {
-   .section > .container .w-layout-grid {
+   .section > .container .w-layout-grid.footer {
     transform: translateX(0);
     grid-template-columns: 1fr;
     justify-items: center;
